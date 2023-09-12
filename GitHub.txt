@@ -1,0 +1,714 @@
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject
+$ git --version
+git version 2.42.0.windows.2
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject
+$ git init
+Initialized empty Git repository in C:/Users/Pabi/Desktop/Phase1EndProject/.git/
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ int add .
+bash: int: command not found
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git add .
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git commit -m "Initial Commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Pabi@DESKTOP-41CFVKR.(none)')
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git config --global user.email "tebogo.seroalo@vodacom.co.za"
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git config --global user.name "Tebogo Seroalo"
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 1dbaa01] Initial Commit
+ 13 files changed, 333 insertions(+)
+ create mode 100644 workspace/.classpath
+ create mode 100644 workspace/.project
+ create mode 100644 workspace/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 workspace/bin/com/App.class
+ create mode 100644 workspace/bin/exception/IncorrectChoice.class
+ create mode 100644 workspace/bin/exception/IncorrectOption.class
+ create mode 100644 workspace/bin/menu/MainMenu.class
+ create mode 100644 workspace/bin/menu/SubMenu.class
+ create mode 100644 workspace/src/com/App.java
+ create mode 100644 workspace/src/exception/IncorrectChoice.java
+ create mode 100644 workspace/src/exception/IncorrectOption.java
+ create mode 100644 workspace/src/menu/MainMenu.java
+ create mode 100644 workspace/src/menu/SubMenu.java
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git add remote origin https://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@github.com/tseroalo/CourseEndProject.git
+fatal: pathspec 'remote' did not match any files
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git add remote origin https://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@github.com/tseroalo/CourseEndProject.git
+fatal: pathspec 'remote' did not match any files
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git remote -v
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git add remote origin https://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@github.com/tseroalo/CourseEndProject.git
+fatal: pathspec 'remote' did not match any files
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git remote add origin https://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@github.com/tseroalo/CourseEndProject.git
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git push -u origin master
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (25/25), 8.78 KiB | 1.76 MiB/s, done.
+Total 25 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/tseroalo/CourseEndProject/pull/new/master
+remote:
+To https://github.com/tseroalo/CourseEndProject.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git --version
+git version 2.42.0.windows.2
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ ls -a
+./  ../  .git/  workspace/
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git branch -M main
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git remote remove origin
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git remote add origin https://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@github.com/tseroalo/CourseEndProject.git
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git add .
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git commit -m "Second Commit"
+On branch main
+nothing to commit, working tree clean
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git push -u origin main
+To https://github.com/tseroalo/CourseEndProject.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/tseroalo/CourseEndProject.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    workspace/.classpath
+        deleted:    workspace/.project
+        deleted:    workspace/.settings/org.eclipse.jdt.core.prefs
+        deleted:    workspace/bin/com/App.class
+        deleted:    workspace/bin/exception/IncorrectChoice.class
+        deleted:    workspace/bin/exception/IncorrectOption.class
+        deleted:    workspace/bin/menu/MainMenu.class
+        deleted:    workspace/bin/menu/SubMenu.class
+        deleted:    workspace/src/com/App.java
+        deleted:    workspace/src/exception/IncorrectChoice.java
+        deleted:    workspace/src/exception/IncorrectOption.java
+        deleted:    workspace/src/menu/MainMenu.java
+        deleted:    workspace/src/menu/SubMenu.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .project
+        .settings/
+        bin/
+        src/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git add .
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    workspace/.classpath -> .classpath
+        renamed:    workspace/.project -> .project
+        renamed:    workspace/.settings/org.eclipse.jdt.core.prefs -> .settings/org.eclipse.jdt.core.prefs
+        renamed:    workspace/bin/com/App.class -> bin/com/App.class
+        renamed:    workspace/bin/exception/IncorrectChoice.class -> bin/exception/IncorrectChoice.class
+        renamed:    workspace/bin/exception/IncorrectOption.class -> bin/exception/IncorrectOption.class
+        renamed:    workspace/bin/menu/MainMenu.class -> bin/menu/MainMenu.class
+        renamed:    workspace/bin/menu/SubMenu.class -> bin/menu/SubMenu.class
+        renamed:    workspace/src/com/App.java -> src/com/App.java
+        renamed:    workspace/src/exception/IncorrectChoice.java -> src/exception/IncorrectChoice.java
+        renamed:    workspace/src/exception/IncorrectOption.java -> src/exception/IncorrectOption.java
+        renamed:    workspace/src/menu/MainMenu.java -> src/menu/MainMenu.java
+        renamed:    workspace/src/menu/SubMenu.java -> src/menu/SubMenu.java
+
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git commit -m "Third Commit"
+[main 169a941] Third Commit
+ 13 files changed, 0 insertions(+), 0 deletions(-)
+ rename workspace/.classpath => .classpath (100%)
+ rename workspace/.project => .project (100%)
+ rename {workspace/.settings => .settings}/org.eclipse.jdt.core.prefs (100%)
+ rename {workspace/bin => bin}/com/App.class (100%)
+ rename {workspace/bin => bin}/exception/IncorrectChoice.class (100%)
+ rename {workspace/bin => bin}/exception/IncorrectOption.class (100%)
+ rename {workspace/bin => bin}/menu/MainMenu.class (100%)
+ rename {workspace/bin => bin}/menu/SubMenu.class (100%)
+ rename {workspace/src => src}/com/App.java (100%)
+ rename {workspace/src => src}/exception/IncorrectChoice.java (100%)
+ rename {workspace/src => src}/exception/IncorrectOption.java (100%)
+ rename {workspace/src => src}/menu/MainMenu.java (100%)
+ rename {workspace/src => src}/menu/SubMenu.java (100%)
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git push -u origin main
+To https://github.com/tseroalo/CourseEndProject.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/tseroalo/CourseEndProject.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git pull -u origin main
+error: unknown switch `u'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --recurse-submodules[=<on-demand>]
+                          control for recursive fetching of submodules
+
+Options related to merging
+    -r, --rebase[=(false|true|merges|interactive)]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --signoff[=...]       add a Signed-off-by trailer
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify              control use of pre-merge-commit and commit-msg hooks
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --shallow-since <time>
+                          deepen history of shallow repository based on time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --deepen <n>          deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+    -o, --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --negotiation-tip <revision>
+                          report that we have only objects reachable from this object
+    --show-forced-updates check for forced-updates on all updated branches
+    --set-upstream        set upstream for git pull/fetch
+
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 619 bytes | 23.00 KiB/s, done.
+From https://github.com/tseroalo/CourseEndProject
+ * [new branch]      main       -> origin/main
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git pull remote main
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git pull CourseEndProject main
+fatal: 'CourseEndProject' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git pull https://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@github.com/tseroalo/CourseEndProject.git main
+From https://github.com/tseroalo/CourseEndProject
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git pull https://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@github.com/tseroalo/CourseEndProject.git master
+From https://github.com/tseroalo/CourseEndProject
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git push -u origin main
+To https://github.com/tseroalo/CourseEndProject.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/tseroalo/CourseEndProject.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git push --help
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git log
+commit 169a94162c3bb25e723a89f1b127b7ec7945499c (HEAD -> main)
+Author: Tebogo Seroalo <tebogo.seroalo@vodacom.co.za>
+Date:   Sat Sep 9 20:09:17 2023 +0200
+
+    Third Commit
+
+commit 1dbaa010fe895156f749115affbabb9ac7cf12cf (origin/master)
+Author: Tebogo Seroalo <tebogo.seroalo@vodacom.co.za>
+Date:   Sat Sep 9 19:55:16 2023 +0200
+
+    Initial Commit
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git check remote origin
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ check remote origin
+bash: check: command not found
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://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@github.com/tseroalo/CourseEndProject.git
+  Push  URL: https://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@github.com/tseroalo/CourseEndProject.git
+  HEAD branch: main
+  Remote branches:
+    main   tracked
+    master tracked
+  Local ref configured for 'git push':
+    main pushes to main (local out of date)
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git branch
+* main
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (main)
+$ git branch -M master
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git branch
+* master
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = https://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@github.com/tseroalo/CourseEndProject.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git push -u origin master
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 193 bytes | 193.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tseroalo/CourseEndProject.git
+   1dbaa01..169a941  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git clone https://github.com/tseroalo/CourseEndProject.git
+Cloning into 'CourseEndProject'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 29 (delta 4), reused 26 (delta 4), pack-reused 0
+Receiving objects: 100% (29/29), 9.53 KiB | 3.18 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ ls
+CourseEndProject/  bin/  src/  workspace/
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd git*
+bash: cd: git*: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ ls
+CourseEndProject/  bin/  src/  workspace/
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd git*
+bash: cd: git*: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\CourseEndProject\git
+bash: cd: C:UsersPabiDesktopPhase1EndProjectCourseEndProjectgit: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\CourseEndProject\git*
+bash: cd: C:UsersPabiDesktopPhase1EndProjectCourseEndProjectgit*: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\CourseEndProject\
+> ls
+bash: cd: C:UsersPabiDesktopPhase1EndProjectCourseEndProjectls: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\CourseEndProject
+bash: cd: C:UsersPabiDesktopPhase1EndProjectCourseEndProject: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\CourseEndProject\git
+bash: cd: C:UsersPabiDesktopPhase1EndProjectCourseEndProjectgit: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject
+bash: cd: C:UsersPabiDesktopPhase1EndProject: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\
+>
+bash: cd: C:UsersPabiDesktopPhase1EndProject: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:\Users\Pabi\Desktop\Phase1EndProject\
+> ls
+bash: cd: C:UsersPabiDesktopPhase1EndProjectls: No such file or directory
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ cd C:/Users/Pabi/Desktop/Phase1EndProject/CourseEndProject
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (main)
+$ ls
+README.md
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (main)
+$ Demo.txt
+bash: Demo.txt: command not found
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (main)
+$ git switch -c new-branch
+Switched to a new branch 'new-branch'
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ Demo.txt
+bash: Demo.txt: command not found
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ Demo.html
+bash: Demo.html: command not found
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ test.html
+bash: test.html: command not found
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git switch -c main
+fatal: a branch named 'main' already exists
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ touch Demo.txt
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git add .
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git commit -m "Done"
+[new-branch b43ba23] Done
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Demo.txt
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git log
+commit b43ba23ae9e3a57f601136e801b71dcc1511408b (HEAD -> new-branch)
+Author: Tebogo Seroalo <tebogo.seroalo@vodacom.co.za>
+Date:   Sat Sep 9 20:35:55 2023 +0200
+
+    Done
+
+commit de5ef6cb29d453a306fa0d62620c8be3291f3854 (origin/main, origin/HEAD, main)
+Author: tseroalo <143906187+tseroalo@users.noreply.github.com>
+Date:   Sat Sep 9 19:42:23 2023 +0200
+
+    Initial commit
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git reflog
+b43ba23 (HEAD -> new-branch) HEAD@{0}: commit: Done
+de5ef6c (origin/main, origin/HEAD, main) HEAD@{1}: checkout: moving from main to new-branch
+de5ef6c (origin/main, origin/HEAD, main) HEAD@{2}: clone: from https://github.com/tseroalo/CourseEndProject.git
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git branch
+  main
+* new-branch
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git branch -a
+  main
+* new-branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/master
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git push
+fatal: The current branch new-branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new-branch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ git push --set-upstream origin new-branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'new-branch' on GitHub by visiting:
+remote:      https://github.com/tseroalo/CourseEndProject/pull/new/new-branch
+remote:
+To https://github.com/tseroalo/CourseEndProject.git
+ * [new branch]      new-branch -> new-branch
+branch 'new-branch' set up to track 'origin/new-branch'.
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject/CourseEndProject (new-branch)
+$ cd C:/Users/Pabi/Desktop/Phase1EndProject/
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        CourseEndProject/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$  git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .classpath
+        deleted:    .project
+        deleted:    .settings/org.eclipse.jdt.core.prefs
+        deleted:    bin/com/App.class
+        deleted:    bin/exception/IncorrectChoice.class
+        deleted:    bin/exception/IncorrectOption.class
+        deleted:    bin/menu/MainMenu.class
+        deleted:    bin/menu/SubMenu.class
+        deleted:    src/com/App.java
+        deleted:    src/exception/IncorrectChoice.java
+        deleted:    src/exception/IncorrectOption.java
+        deleted:    src/menu/MainMenu.java
+        deleted:    src/menu/SubMenu.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        workspace/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git add .
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git commit -m "Fourth Commit"
+[master fc70664] Fourth Commit
+ 13 files changed, 0 insertions(+), 0 deletions(-)
+ rename .classpath => workspace/.classpath (100%)
+ rename .project => workspace/.project (100%)
+ rename {.settings => workspace/.settings}/org.eclipse.jdt.core.prefs (100%)
+ rename {bin => workspace/bin}/com/App.class (100%)
+ rename {bin => workspace/bin}/exception/IncorrectChoice.class (100%)
+ rename {bin => workspace/bin}/exception/IncorrectOption.class (100%)
+ rename {bin => workspace/bin}/menu/MainMenu.class (100%)
+ rename {bin => workspace/bin}/menu/SubMenu.class (100%)
+ rename {src => workspace/src}/com/App.java (100%)
+ rename {src => workspace/src}/exception/IncorrectChoice.java (100%)
+ rename {src => workspace/src}/exception/IncorrectOption.java (100%)
+ rename {src => workspace/src}/menu/MainMenu.java (100%)
+ rename {src => workspace/src}/menu/SubMenu.java (100%)
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git log
+commit fc70664de2605405e5b8494e7ef5953c89273f3e (HEAD -> master)
+Author: Tebogo Seroalo <tebogo.seroalo@vodacom.co.za>
+Date:   Sat Sep 9 20:53:54 2023 +0200
+
+    Fourth Commit
+
+commit 169a94162c3bb25e723a89f1b127b7ec7945499c (origin/master)
+Author: Tebogo Seroalo <tebogo.seroalo@vodacom.co.za>
+Date:   Sat Sep 9 20:09:17 2023 +0200
+
+    Third Commit
+
+commit 1dbaa010fe895156f749115affbabb9ac7cf12cf
+Author: Tebogo Seroalo <tebogo.seroalo@vodacom.co.za>
+Date:   Sat Sep 9 19:55:16 2023 +0200
+
+    Initial Commit
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git reflog
+fc70664 (HEAD -> master) HEAD@{0}: commit: Fourth Commit
+169a941 (origin/master) HEAD@{1}: Branch: renamed refs/heads/main to refs/heads/master
+169a941 (origin/master) HEAD@{3}: commit: Third Commit
+1dbaa01 HEAD@{4}: Branch: renamed refs/heads/master to refs/heads/main
+1dbaa01 HEAD@{6}: commit (initial): Initial Commit
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git branch
+* master
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git branch -a
+* master
+  remotes/origin/main
+  remotes/origin/master
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 239 bytes | 239.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tseroalo/CourseEndProject.git
+   169a941..fc70664  master -> master
+
+Pabi@DESKTOP-41CFVKR MINGW64 ~/Desktop/Phase1EndProject (master)
+$
