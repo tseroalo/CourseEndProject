@@ -99,7 +99,7 @@ public class SubMenu {
 				
 				if(f.exists()) {
 						f.delete();
-						System.out.println("File Deleted Successfully\n");
+						System.out.println("File Deleted Successfully.\n");
 				}else {
 					System.out.println("File Not Found!\n");
 				}
@@ -113,8 +113,8 @@ public class SubMenu {
 				String fna = sc.nextLine();
 				
 				String dPath = "C:\\Project\\" + fna;
-						d = new File(dPath);
-						if(d.exists()) {
+						e = new File(dPath);
+						if(e.exists()) {
 								System.out.println("\nFile Present!\n");
 						}
 						else {
@@ -126,9 +126,6 @@ public class SubMenu {
 				break;
 			default:
 				 System.out.println(choice + " is an incorrect option, please try again.\n");
-				 //System.out.println("Please Enter the Correct Option:\n");
-				 //choice = sc.nextInt();
-				 //SubMenuOptions();
 		    break;
 			}
 			System.out.println("Return to Operations Menu? (yes/no)");
@@ -144,11 +141,11 @@ public class SubMenu {
 				}
 			}
 			while (con.equalsIgnoreCase("yes" + ""));
-			sc.close();
-			if (con.equals("no"))
+			if (con.equalsIgnoreCase("no"))
 			{
 				System.out.println("Thank You, Goodbye!!!");
 				System.exit(0);
 			}
+			sc.close();
 	}
 }

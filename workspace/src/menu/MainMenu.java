@@ -6,9 +6,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 import exception.IncorrectChoice;
-import exception.IncorrectOption;
 
 public class MainMenu {
+	
+	static File rootPath = new File("C:\\Project\\");
 	
 	public static boolean checkInput(String userEntry)
 	{
@@ -26,8 +27,6 @@ public class MainMenu {
 		}
 		return hasString;
 	}
-	
-	static File rootPath = new File("C:\\Project\\");
 
 	public static void menuOptions() throws IOException
 	{
@@ -83,7 +82,7 @@ public class MainMenu {
 				System.out.println("\nReturn to Main Menu?(yes/no)\n");
 				con = sc.nextLine();
 				try {
-					if(!con.equals("yes") && !con.equals("no")) {
+					if(!con.equalsIgnoreCase("yes") && !con.equalsIgnoreCase("no")) {
 						throw new IncorrectChoice(" Please enter yes or no\n");
 					}
 				}
@@ -93,7 +92,7 @@ public class MainMenu {
 					}
 				}
 				while (con.equalsIgnoreCase("yes" + ""));
-				if (con.equals("no"))
+				if (con.equalsIgnoreCase("no"))
 				{
 					System.out.println("Thank You, Goodbye!!!");
 					System.exit(0);					

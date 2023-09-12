@@ -8,4 +8,3 @@ public class IncorrectOption extends Exception{
 				super(name);
 			}
 }
-
